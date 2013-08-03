@@ -10,7 +10,9 @@
       <!-- Your application code -->
 
       <script>
-        console.log(window.location.href);
+        gapi.hangout.onApiReady.add(function(eventObj) {
+          console.log(gapi.hangout.getHangoutUrl());
+        });
       </script>
     ]]>
   </Content>
