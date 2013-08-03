@@ -15,9 +15,9 @@
           var url = gapi.hangout.getHangoutUrl();
 
           // Get the emails passed in the URL
-          var emails = gadgets.views.getParams()['emails'];
+          var appData = gadgets.views.getParams()['appData'];
 
-          console.log(emails);
+          console.log(appData);
 
           // Invite those emails to hangout
           
