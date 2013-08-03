@@ -15,11 +15,13 @@
           var url = gapi.hangout.getHangoutUrl();
 
           // Get the emails passed in the URL
-          var appData = gadgets.views.getParams()['appData'];
+          var emails = gadgets.views.getParams()['appData'];
 
-          console.log(appData);
+          console.log(emails);
 
           // Invite those emails to hangout
+          var input = document.getElementById("sbdp");
+          input.value = emails;
           
           // Send it back to the app so we can ping HipChat
         });
