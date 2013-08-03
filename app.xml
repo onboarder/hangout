@@ -11,7 +11,17 @@
 
       <script>
         gapi.hangout.onApiReady.add(function(eventObj) {
-          console.log(gapi.hangout.getHangoutUrl());
+          // Get the hangout url
+          var url = gapi.hangout.getHangoutUrl();
+
+          // Get the emails passed in the URL
+          var emails = gadgets.views.getParams()['emails'];
+
+          console.log(emails);
+
+          // Invite those emails to hangout
+          
+          // Send it back to the app so we can ping HipChat
         });
       </script>
     ]]>
